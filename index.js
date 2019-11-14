@@ -9,7 +9,7 @@ express()
   .get('/', (req, res) => res.render('pages/index'))
   .listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
-  app.get('/calculate', handleCalculation);
+  /*app.get('/calculate', handleCalculation);
 
   // MODEL
   function handleCalculation(req, res) {
@@ -47,3 +47,4 @@ express()
     res.render('result', params);
 
   }
+*/

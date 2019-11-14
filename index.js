@@ -36,7 +36,9 @@ app.listen(port, function() {
     packageType = packageType;
     let result = 0;
 
-    if (packageType = "Letters (Stamped)") {
+    result = weight * 5;
+
+    /*if (packageType = "Letters (Stamped)") {
       result = .40 + (weight * .15);
     }
     else if (packageType = "Letters (Metered)") {
@@ -53,7 +55,7 @@ app.listen(port, function() {
     }
     else {
       result = 'Error';
-    }
+    }*/
 
     const params = {result : result};
 

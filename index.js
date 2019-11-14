@@ -1,4 +1,4 @@
-const express = require('express')
+/*const express = require('express')
 const path = require('path')
 const PORT = process.env.PORT || 5000
 
@@ -7,20 +7,33 @@ express()
   .set('views', path.join(__dirname, 'views'))
   .set('view engine', 'ejs')
   .get('/', (req, res) => res.render('pages/index'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`)) */
 
-  /*app.get('/calculate', handleCalculation);
+const express = require('express');
+const app = express();
+const port = process.env.PORT || 5000;
+
+app.use(express.static(__dirname + '/public'));
+
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+
+app.get('/calculate', handleCalculation);
+
+app.listen(port, function() {
+  console.log('Node app is running on port', port);
+});
 
   // MODEL
   function handleCalculation(req, res) {
-    const weight = Number(request.query.weight);
-    const packageType = request.query.packageType;
+    const weight = Number(req.query.weight);
+    const packageType = req.query.packageType;
 
-    calculateRate(weight, packageType);
+    calculateRate(res, weight, packageType);
   }
 
-  function calculateRate (weight, packageType) {
-    
+  function calculateRate (res, weight, packageType) {
+    packageType = packageType;
     let result = 0;
 
     if (packageType = "Letters (Stamped)") {
@@ -47,4 +60,3 @@ express()
     res.render('result', params);
 
   }
-*/

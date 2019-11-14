@@ -7,16 +7,16 @@
 </head>
 <body>
     <h1>Postal Rate Calculator</h1>
-    <form action="" method="POST">
-        <label for="">Weight of Package</label><input type="text" name="" id="">
+    <form action="/calculate" method="get">
+        <label for="">Weight of Package</label><input type="text" name="weigth"><br>
         <label for="">Type of Package</label>
-        <select name="" id="">
-            <option value="">Letters (Stamped)</option>
-            <option value="">Letters (Metered)</option>
-            <option value="">Large Envelopes (Flats)</option>
-            <option value="">First-Class Package Service—Retail</option>
+        <select name="packageType">
+            <option>Letters (Stamped)</option>
+            <option>Letters (Metered)</option>
+            <option>Large Envelopes (Flats)</option>
+            <option>First-Class Package Service—Retail</option>
         </select>
-        <input type="submit" name="" id="">
+        <input type="submit">
     </form>
 </body>
 </html>

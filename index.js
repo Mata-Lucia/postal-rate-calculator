@@ -48,7 +48,7 @@ app.listen(port, function() {
     else if (packageType = "First-Class Package Service—Retail") {
       if (weight <= 4) { result = 3.66; }
       else if (weight <= 8) { result = 4.39; }
-      else if (weigth <= 12) { result = 5.19; }
+      else if (weight <= 12) { result = 5.19; }
       else {result = 5.71}
     }
     else {

@@ -10,13 +10,17 @@ p, label {
     font-family: 'Montserrat', sans-serif;
 }
 
-form {
+form, p {
     width: 30%;
     margin: 0 auto;
     padding: 3%;
     border: 3px solid #55627c;
     border-radius: 3%;
     background-color: #a1adc5;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 label, select, .box {

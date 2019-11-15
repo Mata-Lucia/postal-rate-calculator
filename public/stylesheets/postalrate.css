@@ -4,8 +4,12 @@ h1 {
 
 form {
     text-align: center;
-    padding: 10%;
-    border: 2px solid grey;
+    padding: 3%;
+    border: 3px solid darkgrey;
     border-radius: 25%;
+    background-color: grey
 }
 
+label, input, select {
+    padding: 2%;
+}

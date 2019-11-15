@@ -57,6 +57,6 @@ app.listen(port, function() {
 
     const params = {result : result};
 
-    res.render('result', params);
+    res.render('views/result', params);
 
   }

@@ -3,13 +3,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="/stylesheets/postalrate.css">
     <title>Postal Rate Calculator</title>
 </head>
 <body>
     <h1>Postal Rate Calculator</h1>
     <form action="/calculate" method="get">
-        <label for="">Weight of Package</label><input type="text" name="weight"><br>
-        <label for="">Type of Package</label>
+        <label>Weight of Package (in oz)</label><br>
+        <input type="text" name="weight"><br>
+        <label>Type of Package</label><br>
         <select name="packageType">
             <option>Letters (Stamped)</option>
             <option>Letters (Metered)</option>
